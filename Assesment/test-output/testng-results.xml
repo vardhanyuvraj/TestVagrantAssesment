@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-07-29T01:15:19 IST" name="Default suite" finished-at="2022-07-29T01:15:19 IST" duration-ms="405">
+  <suite started-at="2022-07-29T10:29:02 IST" name="Default suite" finished-at="2022-07-29T10:29:02 IST" duration-ms="386">
     <groups>
     </groups>
-    <test started-at="2022-07-29T01:15:19 IST" name="Default test" finished-at="2022-07-29T01:15:19 IST" duration-ms="405">
+    <test started-at="2022-07-29T10:29:02 IST" name="Default test" finished-at="2022-07-29T10:29:02 IST" duration-ms="386">
       <class name="testrunner.TestRunner">
-        <test-method is-config="true" signature="getRcbObject()[pri:0, instance:testrunner.TestRunner@6c80d78a]" started-at="2022-07-29T01:15:19 IST" name="getRcbObject" finished-at="2022-07-29T01:15:19 IST" duration-ms="314" status="PASS">
+        <test-method is-config="true" signature="getTeamRcbObject()[pri:0, instance:testrunner.TestRunner@6c80d78a]" started-at="2022-07-29T10:29:02 IST" name="getTeamRcbObject" finished-at="2022-07-29T10:29:02 IST" duration-ms="317" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getRcbObject -->
-        <test-method signature="checkForeignPlayers()[pri:0, instance:testrunner.TestRunner@6c80d78a]" started-at="2022-07-29T01:15:19 IST" name="checkForeignPlayers" finished-at="2022-07-29T01:15:19 IST" duration-ms="17" status="PASS">
+        </test-method> <!-- getTeamRcbObject -->
+        <test-method signature="checkForeignPlayers()[pri:0, instance:testrunner.TestRunner@6c80d78a]" started-at="2022-07-29T10:29:02 IST" name="checkForeignPlayers" finished-at="2022-07-29T10:29:02 IST" duration-ms="12" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkForeignPlayers -->
-        <test-method signature="checkWicketKeeper()[pri:0, instance:testrunner.TestRunner@6c80d78a]" started-at="2022-07-29T01:15:19 IST" name="checkWicketKeeper" finished-at="2022-07-29T01:15:19 IST" duration-ms="3" status="PASS">
+        <test-method signature="checkWicketKeeper()[pri:0, instance:testrunner.TestRunner@6c80d78a]" started-at="2022-07-29T10:29:02 IST" name="checkWicketKeeper" finished-at="2022-07-29T10:29:02 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkWicketKeeper -->

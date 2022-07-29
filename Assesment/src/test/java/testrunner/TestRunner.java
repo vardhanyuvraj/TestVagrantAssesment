@@ -9,33 +9,24 @@ import org.testng.annotations.Test;
 import com.fasterxml.jackson.core.exc.StreamReadException;
 import com.fasterxml.jackson.databind.DatabindException;
 
-import pojoclasses.Player;
-import pojoclasses.RcbRoot;
-import utilities.TestUtils;
+import testbau.TestBauLogic;
 
 public class TestRunner {
 
-	private RcbRoot rcbRoot;
-
 	@BeforeTest
-	public void getRcbObject() throws StreamReadException, DatabindException, IOException {
-		this.rcbRoot = TestUtils.getJsonObject();
+	public void getTeamRcbObject() throws StreamReadException, DatabindException, IOException {
+		TestBauLogic.getRcbRootObject();
 	}
 
 	@Test
 	public void checkForeignPlayers() {
-		int indianPlayers = 0;
-		for (Player player : rcbRoot.getPlayer()) {
-			if (player.getCountry().equalsIgnoreCase("India")) {
-				indianPlayers++;
-			}
-		}
-		Assert.assertEquals(11 - indianPlayers, 4);
+		Assert.assertEquals(TestBauLogic.getForeignPlayerCount(), 4);
 
 	}
 
 	@Test
 	public void checkWicketKeeper() {
+		Assert.assertTrue(TestBauLogic.isAtleastOneWicketKeeper());
 
 	}
 }

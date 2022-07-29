@@ -15,13 +15,13 @@ public class TestUtils {
 
 	public static String getJsonFilePath() throws IOException {
 		FileInputStream fileInputStream = new FileInputStream(
-				"C:\\Users\\YUVRAJ\\git\\TestVagrantAssesment\\Assesment\\src\\main\\java\\Resources\\configurations.properties");
+				"C:\\Users\\YUVRAJ\\git\\TestVagrantAssesment\\Assesment\\src\\main\\java\\resources\\configurations.properties");
 		Properties properties = new Properties();
 		properties.load(fileInputStream);
 		return properties.getProperty("jsonpath");
 	}
 
-	public static RcbRoot getJsonObject() throws StreamReadException, DatabindException, IOException {
+	public static RcbRoot getRcbRootObject() throws StreamReadException, DatabindException, IOException {
 		ObjectMapper objectMapper = new ObjectMapper();
 		RcbRoot rcbRoot = objectMapper.readValue(new File(getJsonFilePath()), RcbRoot.class);
 		return rcbRoot;
