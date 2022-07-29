@@ -5,8 +5,8 @@
     <classes>
       <class name="testrunner.TestRunner">
         <methods>
+          <include name="getTeamRcbObject"/>
           <include name="checkForeignPlayers"/>
-          <include name="getRcbObject"/>
         </methods>
       </class> <!-- testrunner.TestRunner -->
     </classes>
