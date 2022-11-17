@@ -18,7 +18,7 @@ public class TestUtils {
 				"C:\\Users\\YUVRAJ\\git\\TestVagrantAssesment\\Assesment\\src\\main\\java\\resources\\configurations.properties");
 		Properties properties = new Properties();
 		properties.load(fileInputStream);
-		return properties.getProperty("jsonpath");
+		return properties.getProperty("jsonpathnew");
 	}
 
 	public static RcbRoot getRcbRootObject() throws StreamReadException, DatabindException, IOException {
